@@ -106,6 +106,13 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
 
     let error = document.getElementById("error");
 
+    if (!nombre || !email || !telefono || !region || !ciudad || !mensaje) {
+        window.alert("Debe completar todos los campos para enviar el mensaje");
+        error.textContent = "Debe completar todos los campos para enviar el mensaje";
+        error.style.color = "#f00";
+        return; 
+    }
+
     const templateParams = {
         nombre: nombre,
         email: email,
