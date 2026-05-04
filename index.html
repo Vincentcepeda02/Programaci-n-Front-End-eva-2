@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cogito 3D</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Cogito 3D</h1>
+            <p><em>Pienso, Luego imprimo</em></p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#nosotros">¿Qué es Cogito 3D?</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacta con Nosotros</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="nosotros" class="seccion-nosotros">
+                <h3>¿Qué es Cogito 3D?</h3>
+                <p><strong>Cogito 3D</strong> es un emprendimiento fundado por <strong>Vincent Cepeda, 23 años, estudiante de Ingeniería Informática en Inacap y alumno de la academia española especializada en impresión 3D “Control 3D”.</strong> Nació de la idea de transformar pensamientos en objetos reales, inspirado en la célebre frase de René Descartes <em>“Pienso, luego existo”</em>. Con la impresión 3D damos vida a diseños propios y personalizados, creando desde piezas decorativas y juguetes hasta herramientas mecánicas y proyectos especiales para nuestros clientes.</p>
+                <p>Mi motivación personal es ser parte de los avances tecnológicos en un mundo en constante cambio gracias a la ciencia, y por eso me preparo con formación especializada para ofrecer un servicio profesional y de calidad. En Cogito 3D creemos en la personalización como nuestro sello distintivo: cada cliente puede ver sus ideas convertidas en realidad, con cercanía, creatividad y compromiso. Además, proyectamos expandirnos hacia nuevas tecnologías como el grabado láser y el desarrollo de dispositivos electrónicos, siempre con la visión de llevar los conceptos del mundo de las ideas al mundo tangible.</p>
+            </section>
+
+            <section id="servicios" class="seccion-servicios">
+                <h3>Servicios</h3>
+                <div id="contenedorServicios" class="contenedor-servicios">
+                </div>
+            </section>
+
+            <section id="contacto" class="seccion-contacto">
+                <h3 id="contacto">Contacta con Nosotros</h3>
+                <form id="formulario">
+                    <div class="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="formulario">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formulario">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="formulario">
+                        <label for="region">Región:</label>
+                        <select id="region" name="region" required>
+                            <option value="">Seleccione una región</option>
+                        </select>
+                    </div>
+                    <div class="formulario">
+                        <label for="ciudad">Ciudad:</label>
+                        <select id="ciudad" name="ciudad" required disabled>
+                            <option value="">Seleccione una ciudad</option>
+                        </select>                    </div>
+                    <div class="formulario">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <div id="error"></div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
